@@ -1,0 +1,55 @@
+/* 1006px, 768px, 375px or 360px */
+
+
+/*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+  }
+
+
+.top-box{
+    background-color: black;
+    color:white;
+    width: 100%;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.middle-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    width: 90%;
+    align-items: center;
+    
+    justify-content: space-between;
+    position: relative;
+  
+}
+
+.content-box{
+    display: flex;
+    gap: 1rem;
+}
+
+.english{
+    position: relative;
+    
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    
+}
+
+@media (max-width: 800px){
+    
+} */

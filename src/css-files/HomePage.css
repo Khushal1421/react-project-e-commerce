@@ -1,0 +1,38 @@
+.main-div{
+    display: flex;
+    gap: 8rem; /*would ensure all other elements like(NewArrival, Flash Sales etc stays at a fixed Gap away from Each other*/
+    justify-content: space-around;
+    width: 84%;
+    margin-left: 8%;
+    border: 1px solid red;
+    flex-direction: column; /* Did it so that other div's (like Flash Sales comes towards Column)*/
+    
+}
+
+
+.phone-list{
+    display: flex;
+    border: 1px solid green;
+    gap: 3rem;
+
+    width: 100%; /*This Width is applied to ensure that it appears in left with main div*/
+}
+
+.list{
+    border-right: 1px solid black;
+    width: 20%;
+    
+}
+
+.phone-list .phone{
+    margin-top: 2rem; /*To ensure .list andd .phone same margin from top (see .list too*/
+    width: 100%;
+}
+
+.list .lis ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 0.8rem;
+    gap:1rem;
+}

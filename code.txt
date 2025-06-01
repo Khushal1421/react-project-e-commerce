@@ -1,0 +1,413 @@
+<div className="main-div ">
+        
+        <div className="">
+          <div className="">
+            <p style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>Woman's Fashion <FaAngleRight  /></p>
+            <p style={{display:'flex', alignItems:'center'}}>Men's Fashion <FaAngleRight /></p>
+            <p>Electronics</p>
+            <p>Home and Lifestyle</p>
+            <p>Medicine</p>
+            <p>Sports & Outdoor</p>
+            <p>Baby's & Toys</p>
+            <p>Groceries and Pets</p>
+            <p>Health and Beauty</p>
+          </div>
+        </div>
+
+        <div className="">
+          <img src="src/images/Frame560.png" />
+        </div>
+      </div>
+
+
+Code of Grid Speaker, Women and Perfume
+
+<div className="mt-10">
+          <div className="p-4 bg-gray-100 min-h-screen">
+            <div className="grid gap-4 grid-cols-1 md:grid-cols-3 grid-rows-[repeat(2,_auto)] md:grid-rows-2 auto-rows-auto">
+              {/* PlayStation 5 - spans two rows */}
+              <div className="md:row-span-2 md:col-span-1 rounded-xl overflow-hidden">
+                <img
+                  src="src/images2/Frame 684.png"
+                  alt="PlayStation 5"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Women's Collection */}
+              <div className="md:col-span-2 rounded-xl overflow-hidden">
+                <img
+                  src="src/images2/Frame 685.png"
+                  alt="Women's Collection"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Speakers */}
+              <div className="rounded-xl overflow-hidden">
+                <img
+                  src="src/images2/Frame 686.png"
+                  alt="Speakers"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Perfume */}
+              <div className="rounded-xl overflow-hidden">
+                <img
+                  src="src/images2/Frame 687.png"
+                  alt="Perfume"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+SignUp.css
+
+.top-div{
+    /* border: 1px solid red; */
+    margin-top: 4rem;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    height: 48.813rem;
+    
+}
+h1{
+    word-spacing: 3px;
+}
+
+.sign-up{
+    margin-top: 8rem;
+    /* border: 1px solid green; */
+    width: 32%;
+    gap: 1rem;
+}
+
+.create-account{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.forms{
+    margin-top: 3rem;
+}
+.forms form{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.forms form input[type=text]{
+    border-bottom: 1px solid black;
+}
+
+.google{
+    display:flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4rem;
+    gap:1.3rem;
+}
+
+.mobile-image{
+    height: 781px;
+    width:805px;
+}
+
+.already-account{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+
+
+
+Login.css
+
+.top-div{
+    /* border: 1px solid red; */
+    margin-top: 4rem;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    height: 48.813rem;
+    
+}
+h1{
+    word-spacing: 3px;
+}
+
+.log-in{
+    margin-top: 15rem;
+    /* border: 1px solid green; */
+    width: 32%;
+    gap: 1rem;
+}
+
+.create-account{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.forms{
+    margin-top: 3rem;
+}
+.forms form{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.forms form input[type=text]{
+    border-bottom: 1px solid black;
+}
+
+.google{
+    display:flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4rem;
+    gap:1.3rem;
+}
+
+.mobile-image{
+    height: 781px;
+    width:805px;
+}
+
+.logger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+HomePage.css
+
+.main-div{
+    display: flex;
+    gap: 8rem; /*would ensure all other elements like(NewArrival, Flash Sales etc stays at a fixed Gap away from Each other*/
+    justify-content: space-around;
+    width: 84%;
+    margin-left: 8%;
+    border: 1px solid red;
+    flex-direction: column; /* Did it so that other div's (like Flash Sales comes towards Column)*/
+    
+}
+
+
+.phone-list{
+    display: flex;
+    border: 1px solid green;
+    gap: 3rem;
+
+    width: 100%; /*This Width is applied to ensure that it appears in left with main div*/
+}
+
+.list{
+    border-right: 1px solid black;
+    width: 20%;
+    
+}
+
+.phone-list .phone{
+    margin-top: 2rem; /*To ensure .list andd .phone same margin from top (see .list too*/
+    width: 100%;
+}
+
+.list .lis ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 0.8rem;
+    gap:1rem;
+}
+
+
+/* From here Flash Sales Starts */
+
+.flash-sales{
+    border: 1px solid black;
+    
+}
+
+.flash-sale{
+    border:1px solid green;
+    display: flex;
+    gap: 5.5rem;
+    align-items: flex-end;
+    
+}
+
+.times{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30%;
+}
+
+
+
+
+Header.css
+
+/* 1006px, 768px, 375px or 360px */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+  }
+
+
+.top-box{
+    background-color: black;
+    color:white;
+    width: 100%;
+    /* height: 60px; */
+    display: flex;
+    align-items: center; /* RESEARCH BOTH */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+}
+
+.middle-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    width: 90%;
+    align-items: center;
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    position: relative;
+  
+}
+
+.content-box{
+    display: flex;
+    gap: 1rem;
+}
+
+.english{
+    position: relative;
+    /* border: 1px solid white; */
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    
+}
+
+@media (max-width: 800px){
+    
+}
+
+
+
+/* NavBar CSS */
+
+
+.top-navbar
+{
+    /* background-color: red; */
+    /* color:white; */
+    border-bottom: 1px solid black;
+    width:100%;
+    height: 5rem;
+    display: flex;
+    align-items: flex-end; /* RESEARCH BOTH */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 0.6rem ;
+    justify-content: space-between;
+    position: relative;
+    /* border: 1px solid salmon; */
+}
+
+.exclusive{
+    font-family:sans-serif;
+    padding-left: 2rem;
+    
+}
+    
+.links{
+    display: flex;
+    gap: 4rem;
+}
+
+.side-content{
+    display: flex;
+    gap: 1.3rem;
+}
+.search-bar{
+    background-color: rgb(243, 236, 236);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 19rem;
+}
+
+.side-icons{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.heart{
+    /* display: none; */
+}
+
+.cart{
+    /* display: none; */
+}
+
+.person{
+    background-color: red;
+    border-radius: 50%;
+    /* height: px; */
+}
+
+::placeholder {
+        color: rgb(146, 142, 142);
+}
+

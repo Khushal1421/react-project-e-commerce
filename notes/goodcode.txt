@@ -1,0 +1,31 @@
+Header code from Claude
+
+import { ChevronDown } from 'lucide-react';
+
+export default function Header() {
+  return (
+    <div className="w-full bg-black text-white py-2 px-4">
+      <div className="flex justify-between items-center">
+        {/* Left empty space on smaller screens, content centered */}
+        <div className="hidden md:block w-32"></div>
+        
+        {/* Center promotional text - responds to screen size */}
+        <div className="text-center mx-auto">
+          <p className="text-xs sm:text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis">
+            <span className="">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
+            {/* <span className="xs:hidden">Summer Sale - OFF 50%!</span> */}
+            <span className="ml-2 font-semibold underline text-white cursor-pointer hover:text-gray-200">
+              ShopNow
+            </span>
+          </p>
+        </div>
+        
+        {/* Language selector */}
+        <div className="flex items-center text-xs sm:text-sm md:text-base">
+          <span>English</span>
+          <ChevronDown size={16} className="ml-1" />
+        </div>
+      </div>
+    </div>
+  );
+}

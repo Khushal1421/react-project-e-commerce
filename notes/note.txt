@@ -1,0 +1,134 @@
+> A new thing flex1
+> Difference b/w Justify-Content , Justify-items and Justify-Self
+    Justify-Content
+     What it does:
+       Aligns the entire group of items (content) within the container.
+        Used to distribute space between or around items.
+
+     🧭 Axis:
+       Main axis (horizontal in row-direction, vertical in column-direction)
+
+     📦 Applies to:
+       Flexbox containers
+       Grid containers
+
+       .container {
+        display: grid; /* or flex */
+        justify-content: center;
+       }
+
+    Justify-items
+     What it does:
+       Aligns each item’s content within its own cell (grid area).
+       Sets the default horizontal alignment of all items inside a grid container.
+
+     🧭 Axis:
+       Inline axis (usually horizontal)
+
+     📦 Applies to:
+       Grid containers only
+
+          .container {
+           display: grid;
+           justify-items: start;
+          }
+
+    Justify-Self
+
+     What it does:
+       Aligns a single item's content within its own grid area.
+
+     Overrides justify-items for that one item.
+
+     🧭 Axis:
+       Inline axis (usually horizontal)
+
+     📦 Applies to:
+       Grid items only
+
+justify-**content** → Aligns the group.
+
+justify-**items** → Aligns each item by default.
+
+justify-**self** → Aligns one item individually.
+
+
+
+What's the difference align-items , align-content and align-self?
+
+
+ChatGPT said:
+Great follow-up! Let's break down the difference between align-items, align-content, and align-self — they’re similar to the justify-* properties but apply to vertical alignment (cross axis) in most cases.
+
+🔹 1. align-items
+✅ What it does:
+Aligns items inside the container along the cross axis (usually vertical).
+
+Sets the default vertical alignment for all child items.
+
+🧭 Axis:
+Cross axis (vertical in row-direction, horizontal in column-direction)
+
+📦 Applies to:
+Flex containers
+
+Grid containers
+
+🔧 Example:
+
+.container {
+  display: flex; /* or grid */
+  align-items: center;
+}
+All child items are vertically centered within the container or their cells.
+
+🔸 2. align-content
+✅ What it does:
+Aligns multiple lines of items as a group inside the container.
+
+Only works when there’s wrapping or multiple rows/columns (like flex-wrap: wrap or grid with multiple tracks).
+
+🧭 Axis:
+Cross axis
+
+📦 Applies to:
+Flex containers (with wrap)
+
+Grid containers
+
+🔧 Example:
+
+.container {
+  display: grid; /* or flex with wrap */
+  align-content: space-between;
+}
+The rows or lines of content are distributed with space between them.
+
+🔸 3. align-self
+✅ What it does:
+Aligns a single item on the cross axis.
+
+Overrides the align-items setting for that specific item.
+
+🧭 Axis:
+Cross axis
+
+📦 Applies to:
+Flex items
+
+Grid items
+
+🔧 Example:
+css
+Copy
+Edit
+.item {
+  align-self: flex-end;
+}
+This specific item aligns to the bottom (or end) of its container or cell.
+
+align-**items** → Aligns all items.
+
+align-**content** → Aligns the group of lines.
+
+align-**self** → Aligns a single item.

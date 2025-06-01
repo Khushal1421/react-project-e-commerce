@@ -1,0 +1,43 @@
+My code of Black Header
+
+function Header() {
+  return (
+    <>
+      <div className="bg-black text-white flex flex-row justify-center gap-3 flex-wrap content-center h-[30px]">
+        <div>
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </div>
+        <div className="underline">
+            ShopNow
+        </div>
+
+        <div className="english ">
+            English
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Header;
+
+GPt code of Black Header
+
+export default function Header() {
+    return (
+      <div className="relative bg-black text-white flex items-center h-[30px] px-4">
+        <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-3">
+          <div>
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </div>
+          <div className="underline">
+            ShopNow
+          </div>
+        </div>
+        <div className="ml-auto mr-10 cursor-pointer">
+          English
+        </div>
+      </div>
+    );
+  }
+

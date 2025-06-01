@@ -1,0 +1,6 @@
+> Note that justify variants and align variants are similar with just some differece
+    Align-items work for both flex and grid ; with flex works only if we have applied Wrap whereas Justify-Items only work for Grid
+    In General align all variants accept flex whereas Justify-content is the only one which works on Flex
+    SEE IN MORE DETAILS LATER!!!!!
+
+> <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">Create an Account</h1>

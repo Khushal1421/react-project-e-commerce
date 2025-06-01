@@ -1,0 +1,58 @@
+/* .top-div{
+    
+    margin-top: 4rem;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    height: 48.813rem;
+    
+}
+h1{
+    word-spacing: 3px;
+}
+
+.log-in{
+    margin-top: 15rem;
+    
+    width: 32%;
+    gap: 1rem;
+}
+
+.create-account{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.forms{
+    margin-top: 3rem;
+}
+.forms form{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.forms form input[type=text]{
+    border-bottom: 1px solid black;
+}
+
+.google{
+    display:flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4rem;
+    gap:1.3rem;
+}
+
+.mobile-image{
+    height: 781px;
+    width:805px;
+}
+
+.logger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
