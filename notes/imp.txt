@@ -43,3 +43,7 @@ Padding:- increases gap b/w content and border (like I did in WishList Add-To-Ca
           }
 
 I think I should find other ways also to do a PARTICULAR THING
+
+npm uninstall --save-dev gh-pages
+pnpm add -D gh-pages (it's used with pnpm . why this difference/)
+
