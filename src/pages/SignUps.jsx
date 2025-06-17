@@ -1,9 +1,9 @@
 const SignUps = () => {
     return (
-      <div className="mt-16 w-[90%] h-[48.813rem] flex  gap-50 ">
+      <div className="main mt-16 md:w-[90%] flex flex-col  md:flex-row md:justify-between px-4 md:px-0  md:gap-[10vh] lg:gap-[23vh]  ">
   
         {/* Side Image */}
-        <div className="h-[781px] w-[805px]">
+        <div className="">
           <img src="src/images/sideimage.png" alt="phone-image" className="h-full w-full object-cover" />
         </div>
   
@@ -11,9 +11,14 @@ const SignUps = () => {
         <div className=" mt-32 flex flex-col gap-4">
   
           {/* Heading */}
-          <div className="flex flex-col gap-8">
-            <h1 className="mb-3 text-4xl tracking-wider">Create an Account</h1>
-            <p>Enter your details below</p>
+          <div className="flex flex-col gap-8  ">
+            <div className="flex justify-center md:block">
+              <h1 className="mb-3 text-4xl tracking-wider px-auto">Create an Account</h1>
+            </div>
+            <div className="flex justify-center md:block">
+              <p>Enter your details below</p>
+            </div>
+            
           </div>
   
           {/* Form */}
@@ -44,11 +49,14 @@ const SignUps = () => {
   
           {/* Google Sign Up */}
           <div className="flex border border-black justify-center items-center mt-6 gap-6 h-[50px] cursor-pointer">
+            <div>
             <img
               src="src/logos/Icon-Google.png"
               alt="Google"
               className="h-[24px] w-[24px] ml-[23%]"
             />
+            </div>
+            
             <p>Sign up with Google</p>
           </div>
   

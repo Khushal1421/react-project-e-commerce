@@ -3,7 +3,7 @@
 function RedButton({height, width, content}){
      return(
          <>
-         <div style={{height,width}} className={`bg-red-500 text-white flex flex-wrap justify-center content-center `}>
+         <div style={{height,width}} className={`bg-[#DB4543] text-white flex flex-wrap justify-center content-center rounded-sm `}>
              <p>{content}</p>
          </div>
          </>

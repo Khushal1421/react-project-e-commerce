@@ -1,0 +1,25 @@
+.main{
+    background-color: black;
+    width: 100%;
+}
+
+/* .circle{
+    color: white;
+} */
+
+.circle {
+    width: 200px;               /* Set width */
+    height: 200px;              /* Set height (must equal width for perfect circle) */
+    border-radius: 50%;         /* Makes it circular */
+    background-color: #3498db;  /* Circle color */
+    color: white;               /* Text color */
+    
+    /* Center text horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Optional styling */
+    font-size: 20px;
+    font-weight: bold;
+  }

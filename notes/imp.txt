@@ -4,3 +4,42 @@
     SEE IN MORE DETAILS LATER!!!!!
 
 > <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">Create an Account</h1>
+
+{show && (
+        <div className="absolute mt-2 right-0 z-1">
+          <AccountDropDown />
+        </div>
+      )}
+
+> A COMPONENT gets rendered only from Return Statement
+> Earlier I was doing pnpm in primereact . ow acc. to documentation (inside pnpm I have to do: pnpm add primereact)
+> Difference b/w () & {} when I am writing a code inside Component for Conditional Rendering
+            WishListData1.map((wishlist,i) =>( // in ( which is next to arrow earlier I used { and it didn't worked
+                       <WishCard key={i} {...wishlist} />
+                   ))
+> Using Math is important for using Math functions
+>     for(let i=0;i<pureStar;i++){
+       return(
+        <span key={i}><FaStar /></span> // don't do it cuzz return causes to exit function immediately and I would get 1 star only. 
+       )
+
+> stars.push( // stars is an Array
+      <span key={halfStar}>
+        <FaStarHalfAlt />
+      </span>
+    );
+    i think it works cuz in JS Array , we can push any elements (even object)
+
+Padding:- increases gap b/w content and border (like I did in WishList Add-To-Cart)
+?, && Operator are Important for Conditional Rendering
+
+
+{ // It's imp 
+              CartData.map((cartdata,index) => (
+                 <CartCard key={index} {...cartdata} />
+               )
+              )
+               
+          }
+
+I think I should find other ways also to do a PARTICULAR THING

@@ -18,11 +18,13 @@
     width: 100%; /*This Width is applied to ensure that it appears in left with main div*/
 }
 
-.list{
-    border-right: 1px solid black;
-    width: 20%;
+
+
+/* .list{
+    border-right: 1px solid #b3b3b3;
+    width: 16%;
     
-}
+} */
 
 .phone-list .phone{
     margin-top: 2rem; /*To ensure .list andd .phone same margin from top (see .list too*/

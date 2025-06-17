@@ -1,11 +1,15 @@
+
 import { IoHeartOutline, IoEyeOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 import { FaStarHalfAlt } from "react-icons/fa";
+import { GoStarFill } from "react-icons/go";
+
 import { ImStarEmpty } from "react-icons/im";
 
 const ProductCard = ({
   image,
   percent,
+  color,
   name,
   price,
   oldPrice,
@@ -15,11 +19,11 @@ const ProductCard = ({
   return (
     <>
       <div>
-        <div className="group relative w-full max-w-[270px]   bg-neutral-100 p-4  shadow hover:shadow-lg transition flex flex-col justify-between mt-10">
+        <div className="group relative w-full max-w-[350px]   bg-neutral-100 p-4  shadow hover:shadow-lg transition flex flex-col justify-between mt-10">
           {/* Top Section: Discount + Icons */}
           <div className="flex justify-between items-start ">
-            <div
-              className={`h-[26px] w-[55px] text-white text-xs bg-red-500 px-2 py-1 flex items-center justify-center rounded ${
+            <div                                                   // Q. How to set default color here? i.e. acc. to # configuration
+              className={`h-[26px] w-[55px] text-white text-xs bg-${color} px-2 py-1 flex items-center justify-center rounded ${
                 percent ? "" : "invisible"
               }`}
             >
@@ -37,22 +41,25 @@ const ProductCard = ({
           </div>
 
           {/* Product Image */}
-          <div className="relative  ">
-            <div>
+          <div className="relative   ">
+            <div className="">
               <img
                 src={image}
                 alt="Product"
                 className="w-full h-[120px] object-contain"
               />
             </div>
-
-            {/* Hover: Add to Cart Button */}
-            <div className="mt-1 bottom-0 left-0 right-0 bg-black bg-opacity-70 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-2 rounded-b-xl"> {/*Absolute removed */}
+            <div className="mt-6 invisible">
+              No Way
+            </div>
+            
+          </div>
+          {/* Hover: Add to Cart Button */}
+          <div className="mt-1 absolute  w-full bottom-0 left-0 right-0 bg-black bg-opacity-70 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-2 rounded-b-md"> 
               <button className="bg-black text-white px-4 py-2 rounded-md text-sm font-semibold">
                 Add To Cart
               </button>
             </div>
-          </div>
         </div>
 
         {/* Product Details */}
@@ -82,6 +89,7 @@ const renderStars = (rating) => {
   const stars = [];
   const fullStars = Math.floor(rating);
   const halfStar = rating % 1 !== 0;
+  const remainingStar = 5- (Math.ceil(rating));
 
   for (let i = 0; i < fullStars; i++) {
     stars.push(
@@ -96,6 +104,17 @@ const renderStars = (rating) => {
         <FaStarHalfAlt style={{ fill: "rgb(255, 172, 51)" }} size={20} />
       </span>
     );
+  }
+
+  // Color vs Fill
+  if(remainingStar != 0){
+    for(let i=6;i<remainingStar+6;i++){
+      stars.push( 
+        <span key={i}>
+          <GoStarFill style={{ fill: "rgb(191,191,191)" }} size={20} />
+        </span>
+      );
+    }
   }
   return stars;
 };

@@ -25,7 +25,7 @@ const CategoryGrid = () => {
   const [active, setActive] = useState("");
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 p-4 ">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6  ">
       {categories.map((cat) => (
         <div
           key={cat.label}
