@@ -52,6 +52,11 @@
 
 // export default Phone;
 
+
+
+import apple from '../images/WhiteApple.png';
+import phone from '../images/hero_endframe__cvklg0xk3w6e_large 2.png'
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoArrowRight } from "react-icons/go";
 
@@ -63,7 +68,7 @@ function Phone() {
         <div className="left-box  mx-auto md:mx-0 md:mt-[4rem] ">
           <div className="flex gap-0 md:gap-5 flex-wrap   ">
             <div className="hidden xl:block"> {/* hidden*/}
-              <img src="src/images/WhiteApple.png" alt="White Apple" />
+              <img src={apple} alt="White Apple" />
             </div>
             <p className="flex flex-wrap content-center">iPhone 14 Series </p>
           </div>
@@ -92,7 +97,7 @@ function Phone() {
         <div className="md:pt-0">
           <img
             className="mx-auto   md:h-auto"
-            src="src/images/hero_endframe__cvklg0xk3w6e_large 2.png"
+            src={phone}
             alt="Phone"
           />
         </div>

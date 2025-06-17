@@ -1,16 +1,11 @@
 
+// src/images/qrcode.png
+// src/images/googleplay.png
+// src/images/appstore.png
 
-// function Footer(){
-//     return(
-//         <>
-//          <div className="bg-black text-white ">
-
-//          </div>
-//         </>
-//     )
-// }
-
-// export default Footer;
+import qrcode from '../images/qrcode.png';
+import googleplay from '../images/googleplay.png';
+import appstore from '../images/appstore.png';
 
 
 function Footer() {
@@ -65,10 +60,10 @@ function Footer() {
             <h1 className="text-xl font-bold">Download App</h1>
             <p>Save $3 with App New User Only</p>
             <div className="flex gap-3">
-              <img src="src/images/qrcode.png" alt="qr code" className="w-20 h-20" />
+              <img src={qrcode} alt="qr code" className="w-20 h-20" />
               <div className="flex flex-col gap-2">
-                <img src='src/images/googleplay.png' alt="Google Store" className="w-24" />
-                <img src="src/images/appstore.png" alt="Apple Store" className="w-24" />
+                <img src={googleplay} alt="Google Play" className="w-24" />
+                <img src={appstore} alt="Apple Store" className="w-24" />
               </div>
             </div>
           </div>

@@ -25,6 +25,10 @@
 //     );
 //   }
 
+
+
+import woman from '../images2/woman.png';
+
 export default function WomenCollection() {
   return (
     <div className="bg-black text-white flex relative w-full h-[287px]  overflow-hidden">
@@ -44,7 +48,7 @@ export default function WomenCollection() {
       {/* Image */}
       <div className="ml-auto mt-[2.5px] max-h-full right-0">
         <img
-          src="src/images2/woman.png"
+          src={woman}
           alt="Woman in Black Hat"
           className="h-full object-contain"
         />

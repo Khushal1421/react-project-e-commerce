@@ -26,6 +26,8 @@ import { data } from "../data/info";
 import { productDetail } from "../data/info";
 import { sellingProduct } from "../data/info";
 
+import timing from '../images/timing.png';
+
 function HomePages() {
   // sm:w-[90%] xl:w-[80%] 2xl:w-[60%]
   const [showMenu, setShowMenu] = useState(false);
@@ -127,7 +129,7 @@ function HomePages() {
             <div className="flex gap-20  ">
               <RedBox text={"Today's"} heading={"Flash Sales"} />
               <div className="hidden  timer md:flex flex-wrap content-end">
-                <img src="src/images/timing.png" />
+                <img src={timing} /> {/*src/images/timing.png */}
               </div>
             </div>
 

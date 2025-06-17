@@ -31,7 +31,9 @@
 //   );
 // }
 
-// export default AmazonSpeaker;
+// export default AmazonSpeaker; src/images2/amazon-speaker.png
+
+import amazon from '../images2/amazon-speaker.png';
 
 function AmazonSpeaker() {
   return (
@@ -57,7 +59,7 @@ function AmazonSpeaker() {
           {/*Why does giving mt here shifts whole box? Padding Worked */}
           <img
             className="mx-auto  "
-            src="src/images2/amazon-speaker.png"
+            src={amazon}
             alt="Amazon Speaker"
           />
         </div>

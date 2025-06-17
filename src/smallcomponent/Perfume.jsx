@@ -33,6 +33,8 @@
   
 //   export default Perfume;
 
+// src/images2/perfume.png
+import perfume from '../images2/perfume.png';
 
 function Perfume() {
   return (
@@ -57,7 +59,7 @@ function Perfume() {
           {/*Why does giving mt here shifts whole box? Padding Worked */}
           <img
             className="mx-auto  "
-            src="src/images2/perfume.png"
+            src={perfume}
             alt="Amazon Speaker"
           />
         </div>

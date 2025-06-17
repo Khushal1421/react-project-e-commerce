@@ -1,9 +1,12 @@
+// src/images2/PS5.png
+import ps5 from '../images2/PS5.png';
+
 export default function Playstation5() {
   return (
     <>
       <div className="bg-black  h-full  relative text-white flex flex-wrap content-end">
         <div className="mx-auto pt-5">
-          <img src="src/images2/PS5.png" alt="PS5" />
+          <img src={ps5} alt="PS5" />
         </div>
         <div className="absolute ml-[3.3rem] bottom-[3rem]">
           <div className="">

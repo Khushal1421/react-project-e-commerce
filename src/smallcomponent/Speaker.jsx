@@ -45,6 +45,9 @@
 
 // export default Speaker;
 
+import speaker from '../images/Speaker.png'
+// src/images/Speaker.png
+
 function Speaker()
 {
     return(
@@ -83,7 +86,7 @@ function Speaker()
              </div>
              <div className="mt-[3.5rem] h-[13rem] md:h-auto">
                  
-                 <img className="mx-auto w-[70%] h-[100%] md:w-auto md:h-auto " src="src/images/Speaker.png" alt="Speaker" />
+                 <img className="mx-auto w-[70%] h-[100%] md:w-auto md:h-auto " src={speaker} alt="Speaker" />
                 
              </div>
            </div>

@@ -1,6 +1,25 @@
+// src/images2/dog.png
+// src/images2/camera.png
+// src/images2/laptop.png
+// src/images2/cream.png
+// src/images2/car.png
+// src/images2/shoes.png
+// src/images2/game.png
+// src/images2/jacket.png
+
+import dog from '../images2/dog.png';
+import camera from '../images2/camera.png';
+import laptop from '../images2/laptop.png';
+import cream from '../images2/cream.png';
+import car from '../images2/car.png';
+import shoes from '../images2/shoes.png';
+import game from '../images2/game.png';
+import jacket from '../images2/jacket.png';
+
+
 export const data=[
     {
-        image: "src/images2/dog.png",
+        image: `${dog}`,
         percent: "",
         color: "green-400",
         name: "Breed Dry Dog Food",
@@ -10,7 +29,7 @@ export const data=[
         reviews: 35,
       },
       {
-        image: "src/images2/camera.png",
+        image: `${camera}`,
         percent: "",
         color: "red-500",
         name: "CANON EOS DSLR Camera",
@@ -20,7 +39,7 @@ export const data=[
         reviews: 95,
       },
       {
-        image: "src/images2/laptop.png",
+        image: `${laptop}`,
         percent: "",
         color: "red-500",
         name: "ASUS FHD Gaming Laptop",
@@ -30,7 +49,7 @@ export const data=[
         reviews: 325,
       },
       {
-        image: "src/images2/cream.png",
+        image: `${cream}`,
         percent: "",
         color: "red-500",
         name: "Curology Product Set",
@@ -41,7 +60,7 @@ export const data=[
       },
 
       {
-        image: "src/images2/car.png",
+        image: `${car}`,
         percent: "NEW",
         color: "green-400",
         name: "Kids Electric Car",
@@ -51,7 +70,7 @@ export const data=[
         reviews: 65,
       },
       {
-        image: "src/images2/shoes.png",
+        image: `${shoes}`,
         percent: "",
         color: "red-500",
         name: "Jr. Zoom Soccer Cleats",
@@ -61,7 +80,7 @@ export const data=[
         reviews: 35,
       },
       {
-        image: "src/images2/game.png",
+        image: `${game}`,
         percent: "NEW",
         color: "green-400",
         name: "GP11 Shooter USB Gamepad",
@@ -71,7 +90,7 @@ export const data=[
         reviews: 55,
       },
       {
-        image: "src/images2/jacket.png",
+        image: `${jacket}`,
         percent: "",
         color: "red-500",
         name: "Quilted Satin Jacket",
@@ -82,9 +101,16 @@ export const data=[
       },
 ]
 
+
+
+import redGamePad from '../images/redGamePad.png';
+import keyboard from '../images/keyboard.png';
+import gamingMonitor from '../images/gamingMonitor.png';
+import chair from '../images/chair.png';
+
 export const productDetail = [
   {
-    image: "src/images/redGamePad.png",
+    image: `${redGamePad}`,
     percent: "-40%",
     color: "red-500",
     name: "HAVIT HV-G92 Gamepad",
@@ -94,7 +120,7 @@ export const productDetail = [
     reviews: 88,
   },
   {
-    image: "src/images/keyboard.png",
+    image: `${keyboard}`, // ? Why use `` here
     percent: "-35%",
     color: "red-500",
     name: "AK-900 Wired Keyboard",
@@ -104,7 +130,7 @@ export const productDetail = [
     reviews: 75,
   },
   {
-    image: "src/images/gamingMonitor.png",
+    image: `${gamingMonitor}`,
     percent: "-30%",
     color: "red-500",
     name: "IPS LCD Gaming Monitor",
@@ -114,7 +140,7 @@ export const productDetail = [
     reviews: 99,
   },
   {
-    image: "src/images/chair.png",
+    image: `${chair}`,
     percent: "-25%",
     color: "red-500",
     name: "S-Series Comfort Chair",
@@ -125,9 +151,15 @@ export const productDetail = [
   },
 ];
 
+
+import guccicoat from '../images2/gucci-coat.png';
+import bag from '../images2/bag.png';
+import speaker from '../images2/speaker.png';
+import tabcup from '../images2/tabcup.png';
+
 export const sellingProduct = [
   {
-    image: "src/images2/gucci-coat.png",
+    image: `${guccicoat}`,
     percent: "",
     color: "red-500",
     name: "The north coat",
@@ -137,7 +169,7 @@ export const sellingProduct = [
     reviews: 65,
   },
   {
-    image: "src/images2/bag.png",
+    image: `${bag}`,
     percent: "",
     color: "red-500",
     name: "Gucci duffle bag",
@@ -147,7 +179,7 @@ export const sellingProduct = [
     reviews: 65,
   },
   {
-    image: "src/images2/speaker.png",
+    image: `${speaker}`,
     percent: "",
     color: "red-500",
     name: "RGB liquid CPU Cooler",
@@ -157,7 +189,7 @@ export const sellingProduct = [
     reviews: 65,
   },
   {
-    image: "src/images2/tabcup.png",
+    image: `${tabcup}`,
     percent: "",
     color: "red-500",
     name: "Small BookSelf",
