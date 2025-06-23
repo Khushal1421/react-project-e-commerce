@@ -52,7 +52,7 @@ function Speaker()
 {
     return(
         <>
-         <div className="bg-black  text-white  flex flex-col-reverse md:flex md:flex-row justify-around w-full h-full ">
+         <div className="bg-black  text-white  flex flex-col-reverse md:flex md:flex-row justify-around w-full h-full pb-[5rem] ">
              <div>
                 <div className="hidden md:block mt-[3rem]  ">
                     <p className="text-green-400">Categories</p>
@@ -80,11 +80,11 @@ function Speaker()
                     </div>
                     
                 </div>
-                <div className="mx-auto md:mx-0 mt-[2.9rem] bg-[#00FF66]  w-[171px] h-[56px] flex flex-wrap justify-center content-center">
+                <div className="mx-auto md:mx-0 mt-[2.9rem] bg-[#00FF66]  w-[171px] h-[56px] flex flex-wrap justify-center content-center ">
                         <p>Buy Now!</p>
                 </div>
              </div>
-             <div className="mt-[3.5rem] h-[13rem] md:h-auto">
+             <div className="mt-[3.5rem] h-[13rem]  md:h-auto ">
                  
                  <img className="mx-auto w-[70%] h-[100%] md:w-auto md:h-auto " src={speaker} alt="Speaker" />
                 

@@ -1,0 +1,11 @@
+<div className="flex gap-4">
+                <input type="checkbox" className='accent-red-500' />
+                <p>Save this information for faster check-out next time</p>
+              </div>
+In above accent-red-500 helps to change the color of CheckBox when I select it
+
+accent-color
+Utilities for controlling the accented color of a form control.
+
+flex-grow: 1; The element will grow by a factor of 1. It will fill up the remaining space if no other flexbox item has a flex-grow value.
+If there is grow then there would be shrink as well

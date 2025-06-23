@@ -7,7 +7,7 @@ function WishList() {
       <div className="main w-[85%] mx-auto mt-20">
         <div className="flex justify-between items-center">
           <div>Wishlist (4)</div>
-          <div className="border-1 w-[223px] h-[56px] flex justify-center items-center">
+          <div className="border-1 w-[150px] h-[50px] sm:w-[223px] sm:h-[56px] flex justify-center items-center">
             Move All To Bag
           </div>
         </div>
@@ -31,7 +31,7 @@ function WishList() {
               </div>
             </div>
 
-            <div className="border-1 w-[150px] h-[56px] flex justify-center items-center">
+            <div className="border-1 w-[100px] h-[50px] sm:w-[150px] sm:h-[56px] flex justify-center items-center">
               See All
             </div>
           </div>

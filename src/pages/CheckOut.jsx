@@ -1,8 +1,24 @@
+//                     <img src="src/images/redGamePad.png" alt="GamePad" />
+
+//                     <img src="src/images/redGamePad.png" alt="GamePad" />
+{/* <img src="src/payment-images/image 32 (1).png" /> */}
+
+//                   <img src="src/payment-images/image 30 (1).png" />
+// <img src="src/payment-images/image 31 (1).png" />
+//                   <img src="src/payment-images/image 33 (1).png" />
+
+import redGame from '../images/redGamePad.png';
+import gamingMonitor from '../images/gamingMonitor.png';
+import visa from '../../payment-images/visa.png';
+import mastercard from '../../payment-images/mastercard.png';
+import bkash from '../../payment-images/bkash.png';
+import sanskrit from '../../payment-images/sanskrit.png';
+
 function CheckOut() {
   return (
     <>
       <div className="main w-[100%] sm:w-[85%] mx-auto mt-[4rem]">
-        <div className="flex gap-3">
+        <div className="flex gap-1 sm:gap-3">
           <p className="text-[#909090]">Account</p>
           <p className="text-[#909090]">/</p>
           <p className="text-[#909090]">My Account</p>
@@ -14,76 +30,60 @@ function CheckOut() {
           <p className="">CheckOut</p>
         </div>
 
-        <div className="mt-20 flex justify-between  ">
-          <div className="">
+        <div className="mt-20 flex justify-between gap-10 flex-col lg:flex-row  ">
+          <div className="billing-detail w-full lg:w-[40%] ">
             <h1 className="text-3xl">Billing Details</h1>
-            <div className="w-[470px] h-[766px] mt-10 flex flex-col gap-4">
+            <div className=" mt-10 flex flex-col gap-4">
               <div className="flex flex-col gap-3">
                 <label>First Name</label>
-                <div className="bg-gray-300 h-[50px] w-full ">
-                  <input className="p-2" type="text" size="52" required />
-                </div>
+                <input type="text" className='bg-neutral-100 flex-1 py-3 px-2' />
               </div>
               <div className="flex flex-col gap-3">
                 <label>Company Name</label>
-                <div className="bg-gray-300 h-[50px] w-full ">
-                  <input className="p-2" type="text" size="52" required />
-                </div>
+                <input type="text" className='bg-neutral-100 flex-1 py-3 px-2' />
+
               </div>
 
               <div className="flex flex-col gap-3">
                 <label>Street Address</label>
-                <div className="bg-gray-300 h-[50px] w-full ">
-                  <input className="p-2" type="text" size="52" required />
-                </div>
+                <input type="text" className='bg-neutral-100 flex-1 py-3 px-2' />
+
               </div>
 
               <div className="flex flex-col gap-3">
                 <label>Apartment,floor, etc. (optional)</label>
-                <div className="bg-gray-300 h-[50px] w-full ">
-                  <input className="p-2" type="text" size="52" required />
-                </div>
+                <input type="text" className='bg-neutral-100 flex-1 py-3 px-2' />
+
               </div>
 
               <div className="flex flex-col gap-3">
                 <label>Town/City</label>
-                <div className="bg-gray-300 h-[50px] w-full ">
-                  <input className="p-2" type="text" size="52" required />
-                </div>
+                <input type="text" className='bg-neutral-100 flex-1 py-3 px-2' />
+
               </div>
 
               <div className="flex flex-col gap-3">
                 <label>Phone Number</label>
-                <div className="bg-gray-300 h-[50px] w-full ">
-                  <input
-                    className="p-2"
-                    type="text"
-                    size="52"
-                    maxLength="10"
-                    required
-                  />
-                </div>
+                <input type="text" className='bg-neutral-100 flex-1 py-3 px-2' />
               </div>
 
               <div className="flex flex-col gap-3">
                 <label>Email Address</label>
-                <div className="bg-gray-300 h-[50px] w-full ">
-                  <input className="p-2" type="text" size="52" required />
-                </div>
+                <input type="text" className='bg-neutral-100 flex-1 py-3 px-2' />
               </div>
-              <div className="flex gap-4">
-                <input type="checkbox" />
+              <div className="flex gap-4 mt-5">
+                <input type="checkbox" className='accent-red-500 w-7 h-7 rounded-full' />
                 <p>Save this information for faster check-out next time</p>
               </div>
             </div>
           </div>
 
-          <div className="products flex flex-col gap-[32px] border">
+          <div className="products mt-[6.8rem] flex flex-col gap-[32px]  ">
             <div>
               <div className="product flex justify-between">
                 <div className="one-product flex gap-3 items-center">
                   <div className="h-[54px] w-[54px]">
-                    <img src="src/images/redGamePad.png" alt="GamePad" />
+                    <img src={redGame} alt="GamePad" />
                   </div>
                   <p>H1 GamePad</p>
                 </div>
@@ -92,11 +92,11 @@ function CheckOut() {
               <div className="product flex justify-between">
                 <div className="one-product flex gap-3 items-center">
                   <div className="h-[54px] w-[54px]">
-                    <img src="src/images/redGamePad.png" alt="GamePad" />
+                    <img src={gamingMonitor} alt="GamePad" />
                   </div>
-                  <p>H1 GamePad</p>
+                  <p>LCD Monitor</p>
                 </div>
-                <p>$650</p>
+                <p>$1100</p>
               </div>
             </div>
 
@@ -119,39 +119,37 @@ function CheckOut() {
 
             <div className="bank flex justify-between">
               <div className="flex gap-3">
-                <input type="radio" />
+                <input type="radio" className='w-5 h-5 accent-black' name='payment' />
                 <p>Bank</p>
               </div>
               <div className="flex">
                 <div className="w-[42px] h-[28px]">
-                  <img src="src/payment-images/image 32 (1).png" />
+                  <img src={bkash} />
                 </div>
                 <div className="w-[42px] h-[28px]">
-                  <img src="src/payment-images/image 30 (1).png" />
+                  <img src={visa} />
                 </div>
                 <div className="w-[42px] h-[28px]">
-                  <img src="src/payment-images/image 31 (1).png" />
+                  <img src={mastercard} />
                 </div>
                 <div className="w-[42px] h-[28px]">
-                  <img src="src/payment-images/image 33 (1).png" />
+                  <img src={sanskrit} />
                 </div>
               </div>
             </div>
 
             <div className="cash flex gap-3">
-              <input type="radio" />
+              <input type="radio" className='w-5 h-5 accent-black' name='payment' />
               <p>Cash on Delievery</p>
             </div>
 
             <div className="flex gap-3">
-                <div className="border flex  items-center w-[300px] h-[56px]">
-                   <input type="text" size="34" placeholder="Coupon Code"  />
-                </div>
-                <div className="border flex justify-center text-white bg-[#db4543] items-center w-[300px] h-[56px]">
+                <input type="text" className='flex-1 border  px-3' placeholder='Coupon Code' />
+                <div className="border flex justify-center text-white bg-[#db4543] items-center py-2 px-6">
                    Apply Coupon
                 </div>
             </div>
-            <div className="border flex justify-center text-white bg-[#db4543] items-center w-[190px] h-[56px]">
+            <div className="border flex w-[35%] lg:w-[50%] px-4 py-3 justify-center text-white bg-[#db4543] items-center ">
                    Place Order
                 </div>
           </div>

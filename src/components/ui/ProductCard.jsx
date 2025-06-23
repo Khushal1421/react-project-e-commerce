@@ -18,7 +18,7 @@ const ProductCard = ({
 }) => {
   return (
     <>
-      <div>
+      <div className="px-6 sm:px-0">
         <div className="group relative w-full max-w-[350px]   bg-neutral-100 p-4  shadow hover:shadow-lg transition flex flex-col justify-between mt-10">
           {/* Top Section: Discount + Icons */}
           <div className="flex justify-between items-start ">

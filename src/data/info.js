@@ -1,11 +1,4 @@
-// src/images2/dog.png
-// src/images2/camera.png
-// src/images2/laptop.png
-// src/images2/cream.png
-// src/images2/car.png
-// src/images2/shoes.png
-// src/images2/game.png
-// src/images2/jacket.png
+
 
 import dog from '../images2/dog.png';
 import camera from '../images2/camera.png';
@@ -200,30 +193,40 @@ export const sellingProduct = [
   },
 ];
 
+// src/logos/Home.png
+// src/logos/Dollar.png
+// src/logos/Bag.png
+// src/logos/CashBag.png
+
+import home from '../logos/Home.png'
+import dollar from '../logos/Dollar.png'
+import bagee from '../logos/Bag.png'
+import cashbag from '../logos/CashBag.png'
+
 export const carddata = [
   {
-    image: "src/logos/Home.png",
+    image:`${home}`,
     backgroundcolor: "white",
     color: "black",
     heading: "10.5k",
     para: "Sallers active our site",
   },
   {
-    image: "src/logos/Dollar.png",
+    image: `${dollar}`,
     backgroundcolor: "red-500",
     color: "white",
     heading: "33k",
     para: "Monthly Product Sale",
   },
   {
-    image: "src/logos/Bag.png",
+    image: `${bagee}`,
     backgroundcolor: "white",
     color: "black",
     heading: "45.5k",
     para: "Customer active in our site",
   },
   {
-    image: "src/logos/CashBag.png",
+    image: `${cashbag}`,
     backgroundcolor: "white",
     color: "black",
     heading: "25k",
@@ -329,3 +332,31 @@ export const CartData = [
     subtotal:0
   }
 ]
+
+// src/images3/image 57 (1).png
+// src/images3/image 58 (1).png
+// src/images3/image 61 (1).png
+// src/images3/image 59 (1).png
+import im1 from '../images3/image1.png'
+import im2 from '../images3/image2.png'
+import im3 from '../images3/image3.png'
+import im4 from '../images3/image4.png'
+
+export const ProductDetailImages=[
+  {
+    image: `${im1}`,
+  },
+  {
+    image:`${im2}`,
+  },
+  {
+    image:`${im3}`,
+  },
+  {
+    image:`${im4}`,
+  }
+]
+
+export const sizes =[
+   'XS', 'S', 'M', 'L', 'XL'
+];

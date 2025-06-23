@@ -231,3 +231,97 @@ CartData.map(...) is JavaScript → needs {}.
 It's required to evaluate JavaScript inside JSX layout.
 
 Let me know if you want a visual or more analogies!
+
+fill vs color (SEE in headers with FiUser;) Fill fills whole Component Icon whereas color fills only Boundary
+
+Content-center VS Items-center
+(align-content: center) VS (align-items:center)
+
+
+The likely reason Tom Cruise’s image appears slightly higher than the others — even though the card structure is the same — is due to inconsistent image aspect ratios or vertical whitespace in the image itself.
+The likely reason Tom Cruise’s image appears slightly higher than the others — even though the card structure is the same — is due to inconsistent image aspect ratios or vertical whitespace in the image itself.
+
+🔍 Why this happens:
+The image of Tom Cruise might have less vertical padding or whitespace around the subject.
+
+Even if all cards are the same height, images without similar content framing (i.e. how much space is above/below the person in the photo) will appear misaligned visually.
+
+✅ How to Fix It
+✅ 1. Use object-contain or object-cover with fixed height
+In your image tag, do something like:
+
+html
+Copy
+Edit
+<img
+  src="..." 
+  className="h-[400px] w-full object-contain mx-auto"
+/>
+object-contain keeps the whole image visible and scales proportionally.
+
+object-cover fills the area but may crop.
+
+mx-auto ensures horizontal centering.
+
+✅ 2. Wrap the image with a div and set uniform size
+jsx
+Copy
+Edit
+<div className="h-[400px] w-full flex items-end justify-center">
+  <img src="..." className="h-full object-contain" />
+</div>
+items-end pushes all images to the same vertical bottom, improving alignment even if heights differ slightly.
+
+✅ 3. Manually crop or edit images
+Open the images in a photo editor (like Figma, Photoshop, or remove.bg).
+
+Make sure each headshot:
+
+Has similar head position
+
+Includes even top and bottom padding
+
+Bonus: Tailwind Utility Tip
+You can enforce a common image size using a utility class:
+
+jsx
+Copy
+Edit
+<img src="..." className="aspect-[3/4] h-96 object-contain" />
+This forces all images to have the same aspect ratio.
+
+Let me know if you want a code block to apply this fix directly to your team member cards.
+
+
+Aspect ratio is the proportional relationship between the width and height of an element (like an image, video, or container). It's written as:
+
+arduino
+Copy
+Edit
+aspect ratio = width : height
+📐 Examples:
+Aspect Ratio	What it Means	Looks Like
+1:1	Width equals height	A perfect square
+16:9	Widescreen (TV/video)	Common in YouTube videos
+3:4	Portrait orientation	Taller than it is wide
+4:3	Standard old-school video	More square, less wide
+
+🧠 Why It's Useful
+Ensures consistency in layouts.
+
+Prevents images/videos from looking stretched or squished.
+
+Helps in responsive design — scales smoothly on all devices.
+
+✅ In Tailwind CSS:
+You can control it using aspect-[width/height]. For example:
+
+html
+Copy
+Edit
+<div className="aspect-[3/4] w-64">
+  <img src="..." className="h-full w-full object-cover" />
+</div>
+This ensures the div always keeps a 3:4 ratio, no matter the screen size.
+
+Let me know if you'd like visuals or a live code example to better understand it!

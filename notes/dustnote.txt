@@ -1,0 +1,16 @@
+[vite] (client) hmr update /src/pages/CheckOut.jsx, /src/index.css (x13)
+18:38:08 [vite] (client) hmr update /src/pages/CheckOut.jsx, /src/index.css (x14)
+18:38:15 [vite] (client) hmr update /src/pages/CheckOut.jsx, /src/index.css (x15)
+18:38:15 [vite] (client) hmr update /src/pages/CheckOut.jsx, /src/index.css (x16)
+
+(client) hmr update /src/pages/CheckOut.jsx, /src/index.css (x22)
+18:42:26 [vite] (client) page reload notes/imp.txt
+18:42:31 [vite] (client) page reload notes/imp.txt (x2)
+18:43:26 [vite] (client) page reload notes/note2.txt
+18:43:35 [vite] (client) page reload notes/note2.txt (x2)
+18:43:41 [vite] (client) page reload notes/note2.txt (x3)
+18:43:41 [vite] (client) page reload notes/note2.txt (x4)
+18:52:47 [vite] (client) page reload notes/note2.txt (x5)
+
+NOTE:- Page reloaded when I wrote somethig in Notes but in other cases Just Updated
+

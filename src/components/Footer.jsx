@@ -1,7 +1,8 @@
+import { RiFacebookLine } from "react-icons/ri";
+import { FaInstagram } from "react-icons/fa6";
+import { RiTwitterLine } from "react-icons/ri";
+import { RiLinkedinLine } from "react-icons/ri";
 
-// src/images/qrcode.png
-// src/images/googleplay.png
-// src/images/appstore.png
 
 import qrcode from '../images/qrcode.png';
 import googleplay from '../images/googleplay.png';
@@ -10,8 +11,8 @@ import appstore from '../images/appstore.png';
 
 function Footer() {
     return (
-      <div className="bg-black text-white px-10 mt-[32px] pt-24">
-        <div className="flex flex-wrap gap-33  ml-[6%]">
+      <div className="bg-black text-white px-15 sm:px-10 md:px-5 mt-[32px] pt-15 sm:pt-24"> {/*Originally just px-10 */}
+        <div className="flex flex-wrap gap-20 sm:gap-33  ml-[6%]">
           {/* Column 1 */}
           <div className="flex flex-col gap-5">
             <h1 className="text-xl font-bold">Exclusive</h1>
@@ -65,6 +66,12 @@ function Footer() {
                 <img src={googleplay} alt="Google Play" className="w-24" />
                 <img src={appstore} alt="Apple Store" className="w-24" />
               </div>
+            </div>
+            <div className="px-2 flex gap-4">
+               <RiFacebookLine size={20} />
+               <RiTwitterLine size={20} />
+               <FaInstagram size={20}/>
+               <RiLinkedinLine size={20} />
             </div>
           </div>
         </div>

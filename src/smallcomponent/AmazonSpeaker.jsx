@@ -39,7 +39,7 @@ function AmazonSpeaker() {
   return (
     <>
       <div style={{ background: 'linear-gradient(to right, #151515 0%, #212121 25%, #313131 50%, #212121 75%, #151515 100%)',}} 
-       className=" relative text-white h-full">
+       className=" relative text-white h-full pb-6">
       <div className="absolute bottom-[1.5rem] ml-[2rem]">
           <div className="">
             <h2 className="text-2xl font-medium">Speakers</h2>

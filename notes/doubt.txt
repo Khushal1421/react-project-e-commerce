@@ -7,3 +7,23 @@ Document VS Window; I used in ArrowUp for Scroll Top
               )
                
           }
+
+Content-center VS Items-center
+(align-content: center) VS (align-items:center)
+
+{/* how did w-full ensure that input stays within limit? */} IN Contacts.jsx
+
+Object-contain vs Object-cover (In Image Case); Look DEEPLY
+
+object contain vs object cover vs object-fit
+
+<Routes> {/*Nested Components SEE LAteR */}
+         <Route path="/" element={<HomePages />} /> {/*Example of Passing Component as Prop */}
+
+      </Routes>
+
+import {HashRouter, Route, Routes, Link} from 'react-router-dom';
+  What does above and import LOC basically import inside Components?
+
+What is inset-0 (inside Headers)
+onClick={() =>setSearch(false)} why it's necessary to use () => HERE

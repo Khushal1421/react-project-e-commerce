@@ -64,7 +64,7 @@ function Phone() {
   return (
     <>
       {/*Necessary to specify flex-row here */}
-      <div className="bg-black h-full w-full  text-white flex flex-col-reverse  md:flex md:flex-row md:justify-around relative">
+      <div className="bg-black h-full w-full  text-white flex flex-col-reverse  md:flex md:flex-row md:justify-around relative pb-10 md:pb-0">
         <div className="left-box  mx-auto md:mx-0 md:mt-[4rem] ">
           <div className="flex gap-0 md:gap-5 flex-wrap   ">
             <div className="hidden xl:block"> {/* hidden*/}

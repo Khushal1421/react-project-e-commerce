@@ -36,7 +36,7 @@ function HomePages() {
   return (
     <>
       <div className="relative">
-        <hr className="absolute w-full border-[#b3b3b3]  mt-[1.4rem]"></hr>
+        {/* <hr className="absolute w-full border-[#b3b3b3]  mt-[1.4rem]"></hr> */}
       </div>
       <div className="main w-[100%] md:w-[85%]  mt-6 mx-auto ">
         <div className=" md:hidden  items-center rounded-3xl shadow-md inline">
@@ -45,7 +45,7 @@ function HomePages() {
         <div className="container  flex gap-10">
           <div className="list hidden md:block  w-60 border-r border-[#b3b3b3] ">
             <div className="sub-list mt-5 w-52 ">
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-4 pr-2">
                 <div>
                   <p
                     style={{
@@ -260,7 +260,7 @@ function HomePages() {
           <Account />
         </div>
 
-        <div className="mt-[5rem] flex justify-end ">
+        <div className="mt-[5rem] flex justify-end cursor-pointer">
           <ArrowUp />
         </div>
       </div>

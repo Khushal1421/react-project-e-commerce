@@ -46,4 +46,45 @@ I think I should find other ways also to do a PARTICULAR THING
 
 npm uninstall --save-dev gh-pages
 pnpm add -D gh-pages (it's used with pnpm . why this difference/)
+overflow-x-auto (shows Scrollbar ; Cart.jsx STUDY DEEPLY)
+group on parent and group-hover on child to show hover Effect
 
+The overflow-auto class is a Tailwind utility class that is used to add scrollbars to an element 
+when its content overflows the bounds of that element. Unlike overflow-scroll, which always shows scrollbars, 
+this utility will only show them if scrolling is necessary. Here's how to use it: <div class="
+
+flex-grow (flex:1 in tailwind) [it's used in Contact.jsx (to grow input acc. to screen size)]
+The flex:1 property is a shorthand for the flex-grow property, one of the many properties 
+that can be used to control the layout of elements within a flex container. 
+The flex-grow property specifies how much of the available space 
+within a container an element should take up, relative to the other elements.
+
+w-[%] can help expand proportionally when we INCREASE Screen Size
+width:height ratio (Or aspect ratio) [LOOK INTO IT]
+
+The <textarea> tag defines a multi-line text input control. The <textarea> element is often used 
+in a form, to collect user inputs like comments or reviews. (Used in Contacts.jsx) 
+I was using input type="text" earlier
+[Also look for type
+in other places ]
+
+Inconsistent Image Aspect Ratio can wither Image
+Aspect ratio is proportional relationship b/w Width and Height of an Element (like image , video, or Container)
+aspect ratio = width : height; [It ensures Consistency in Layouts; prevents strectching images/videos and helpful in  maintainimng responsiveness]
+There are various ways to do it (Look for them)
+
+No, a standard radio button, by design, cannot be deselected once it has been selected within its group. 
+The purpose of a radio button is to allow users to choose only one option from a set, and selecting a new button automatically deselects the previously chosen one
+
+I can't change CheckBox border via rounded-full cuz Checkbox are native form elememt and have their own styles which are applied by the Browswer
+(called "user agent styles")
+These styles ofte ovveridde or ignore CSS classes like padding, border, appearance etc
+
+In Radio Button having same name is necessary to Select one of The Radio Box 
+(Once Selected - a radio box can't be unselected )
+If U wanna deselect, use CheckBox
+
+<Route path="*" element={<NotFound />} /> I think in case if someone types in wrong url
+
+With HashRouter if u have used /cart
+ http://localhost:5173/react-project-e-commerce/#/cart

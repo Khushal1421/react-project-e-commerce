@@ -1,7 +1,7 @@
 function Card({ image, backgroundcolor, color, heading, para }) {
   return (
     <>
-      <div className={` mt-10 border rounded-md h-[230px] w-[270px] bg-${backgroundcolor} text-${color}`} >
+      <div className={` mt-10 border rounded-md mx-auto w-[80%] sm:w-full h-[100%] sm:mx-0 bg-${backgroundcolor} text-${color}`} >
         <div className="">
           <div className="image mt-[2rem]">
             <img className="mx-auto" src={image} alt="CashBag" />
