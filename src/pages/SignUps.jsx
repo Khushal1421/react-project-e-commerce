@@ -1,10 +1,12 @@
+import sideimage from '../images/sideimage.png';
+
 const SignUps = () => {
     return (
       <div className="main mt-16 md:w-[90%] flex flex-col  md:flex-row md:justify-between px-4 md:px-0  md:gap-[10vh] lg:gap-[23vh]  ">
   
         {/* Side Image */}
         <div className="">
-          <img src="src/images/sideimage.png" alt="phone-image" className="h-full w-full object-cover" />
+          <img src={sideimage} alt="phone-image" className="h-full w-full object-cover" />
         </div>
   
         {/* Sign Up Form */}

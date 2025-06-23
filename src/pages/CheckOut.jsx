@@ -17,8 +17,8 @@ import sanskrit from '../../payment-images/sanskrit.png';
 function CheckOut() {
   return (
     <>
-      <div className="main w-[100%] sm:w-[85%] mx-auto mt-[4rem]">
-        <div className="flex gap-1 sm:gap-3">
+      <div className="main w-[85%] mx-auto mt-[4rem]">
+        <div className="flex flex-wrap gap-1 sm:gap-3">
           <p className="text-[#909090]">Account</p>
           <p className="text-[#909090]">/</p>
           <p className="text-[#909090]">My Account</p>
@@ -122,17 +122,17 @@ function CheckOut() {
                 <input type="radio" className='w-5 h-5 accent-black' name='payment' />
                 <p>Bank</p>
               </div>
-              <div className="flex">
-                <div className="w-[42px] h-[28px]">
+              <div className="flex items-center">
+                <div className="w-[42px] h-[28px] flex items-center">
                   <img src={bkash} />
                 </div>
-                <div className="w-[42px] h-[28px]">
+                <div className="w-[42px] h-[28px] flex items-center">
                   <img src={visa} />
                 </div>
-                <div className="w-[42px] h-[28px]">
+                <div className="w-[42px] h-[28px] flex items-center">
                   <img src={mastercard} />
                 </div>
-                <div className="w-[42px] h-[28px]">
+                <div className="w-[42px] h-[28px] flex items-center">
                   <img src={sanskrit} />
                 </div>
               </div>
@@ -143,7 +143,7 @@ function CheckOut() {
               <p>Cash on Delievery</p>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 ">
                 <input type="text" className='flex-1 border  px-3' placeholder='Coupon Code' />
                 <div className="border flex justify-center text-white bg-[#db4543] items-center py-2 px-6">
                    Apply Coupon

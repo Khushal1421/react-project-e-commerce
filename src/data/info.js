@@ -234,6 +234,11 @@ export const carddata = [
   },
 ];
 
+// src/images2/bag.png
+// src/images2/speaker.png
+// src/images2/game.png
+// src/images2/jacket.png
+
 export const WishListData1 = [
   {
     color:'red-500',
@@ -241,7 +246,7 @@ export const WishListData1 = [
     name: 'Gucci duffle bag',
     price: '960',
     oldPrice: '1160',
-    image: 'src/images2/bag.png',
+    image: `${bag}`,
     star: ''
   },
   {
@@ -250,7 +255,7 @@ export const WishListData1 = [
     name: 'RGB liquid CPU Cooler',
     price: '1960',
     oldPrice: '',
-    image: 'src/images2/speaker.png',
+    image: `${speaker}`,
     star: '',
   },
   {
@@ -259,7 +264,7 @@ export const WishListData1 = [
     name: 'GP11 Shooter USB GamePad',
     price: '550',
     oldPrice: '',
-    image: 'src/images2/game.png',
+    image: `${game}`,
     star: ''
   },
   {
@@ -268,10 +273,15 @@ export const WishListData1 = [
     name: 'Quilted Satin Jacket',
     price: '750',
     oldPrice: '',
-    image: 'src/images2/jacket.png',
+    image: `${jacket}`,
     star: ''
   }
 ]
+
+// src/images2/laptop.png
+// src/images/gamingMonitor.png
+// src/images/redGamePad.png
+// src/images/keyboard.png
 
 export const WishListData2 = [
   {
@@ -280,7 +290,7 @@ export const WishListData2 = [
     name: 'ASUS FHD Gaming Laptop',
     price: '960',
     oldPrice: '1160',
-    image: 'src/images2/laptop.png',
+    image: `${laptop}`,
     star: 5,
     reviews: '65'
   },
@@ -290,7 +300,7 @@ export const WishListData2 = [
     name: 'IPS LCD Gaming Monitor',
     price: '1160',
     oldPrice: '',
-    image: 'src/images/gamingMonitor.png',
+    image: `${gamingMonitor}`,
     star:5,
     reviews: '65'
   },
@@ -300,7 +310,7 @@ export const WishListData2 = [
     name: 'HAVIT HV-G92 Gamepad',
     price: '560',
     oldPrice: '',
-    image: 'src/images/redGamePad.png',
+    image: `${redGamePad}`,
     star: 5,
     reviews: '65'
   },
@@ -310,7 +320,7 @@ export const WishListData2 = [
     name: 'AK-900 Wired Keyboard',
     price: '200',
     oldPrice: '',
-    image: 'src/images/keyboard.png',
+    image: `${keyboard}`,
     star: 5,
     reviews: '65'
   }
@@ -318,14 +328,14 @@ export const WishListData2 = [
 
 export const CartData = [
   {
-    image: 'src/images/gamingMonitor.png',
+    image: `${gamingMonitor}`,
     name: 'LCD Monitor',
     price: 650,
     quantity: 1,
     subtotal:0
   },
   {
-    image: 'src/images/redGamePad.png',
+    image: `${redGamePad}`,
     name: 'H1 Gamepad',
     price: 550,
     quantity: 1,
